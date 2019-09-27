@@ -112,7 +112,7 @@ public class BussEmpleado {
     }
     public boolean montoBono(){
         boolean std=false;
-       int bono=0;
+       
         List<Empleado> lista = new ArrayList<>();
         try {
             Conectar db=new Conectar();
@@ -126,16 +126,12 @@ public class BussEmpleado {
                 em.setNombre(rs.getString("nombre"));
                 em.setEdad(rs.getInt("edad"));
                 em.setAntiguedad(rs.getInt("antiguedad"));
-                int asd=em.getAntiguedad()*2332;
-                em.setBono(asd);
+                int bono=em.getAntiguedad()*50000;
+                em.setBono(bono);
                 lista.add(em);
                 
             }
-            for(int i=0;i<lista.size();i++){
-               bono=lista.get(i).getAntiguedad()*50000;
-               lista.get(i).setBono(bono);
-               return std=true;
-            }
+            
         } catch (Exception e) {
         }
         return std;
