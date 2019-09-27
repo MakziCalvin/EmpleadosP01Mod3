@@ -110,7 +110,7 @@ public class BussEmpleado {
         }
         return std;
     }
-    public boolean montoBono(){
+    /*public boolean montoBono(){
         boolean std=false;
        
         List<Empleado> lista = new ArrayList<>();
@@ -136,6 +136,7 @@ public class BussEmpleado {
         }
         return std;
         
-    }
+    }*/
+   
 
 }
