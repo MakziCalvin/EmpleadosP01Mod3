@@ -114,7 +114,6 @@ public class BussEmpleado {
         boolean std=false;
        int bono=0;
         List<Empleado> lista = new ArrayList<>();
-        int [] bonos;
         try {
             Conectar db=new Conectar();
             Connection conn=db.conectarMySQL();
@@ -127,6 +126,8 @@ public class BussEmpleado {
                 em.setNombre(rs.getString("nombre"));
                 em.setEdad(rs.getInt("edad"));
                 em.setAntiguedad(rs.getInt("antiguedad"));
+                int asd=em.getAntiguedad()*2332;
+                em.setBono(asd);
                 lista.add(em);
                 
             }
