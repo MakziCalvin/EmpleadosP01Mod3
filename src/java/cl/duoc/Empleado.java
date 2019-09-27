@@ -6,6 +6,7 @@ public class Empleado {
     private String nombre;
     private int edad;
     private int antiguedad;
+    private int bono;
 
     public Empleado() {
     }
@@ -17,6 +18,14 @@ public class Empleado {
         this.antiguedad = antiguedad;
     }
 
+    public int getBono() {
+        return bono;
+    }
+
+    public void setBono(int bono) {
+        this.bono = bono;
+    }
+    
     public String getRut() {
         return rut;
     }
